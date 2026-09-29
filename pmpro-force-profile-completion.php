@@ -394,6 +394,7 @@ add_action( 'profile_update', 'pmprofpc_clear_incomplete_fields_cache' );
  */
 function pmprofpc_clear_all_incomplete_fields_cache() {
 	global $wpdb;
+	// phpcs:ignore WordPress.DB.DirectDatabaseQuery.DirectQuery, WordPress.DB.DirectDatabaseQuery.NoCaching -- Static query; bulk-deletes this plugin's per-user transients, which has no API equivalent.
 	$wpdb->query( "DELETE FROM {$wpdb->options} WHERE option_name LIKE '_transient_pmprofpc_incomplete_fields_%' OR option_name LIKE '_transient_timeout_pmprofpc_incomplete_fields_%'" );
 }
 add_action( 'update_option_pmpro_user_fields_settings', 'pmprofpc_clear_all_incomplete_fields_cache' );
