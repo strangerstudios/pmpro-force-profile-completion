@@ -2,9 +2,9 @@
 Contributors: strangerstudios, paidmembershipspro
 Tags: paid memberships pro, pmpro, user fields, profile, members
 Requires at least: 5.4
-Tested up to: 7.0
+Tested up to: 7.1
 Requires PHP: 7.4
-Stable tag: 1.1
+Stable tag: 1.1.1
 License: GPL-3.0+
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -74,6 +74,9 @@ The cache is cleared automatically when:
 The cache has a maximum lifetime of 10 minutes.
 
 == Changelog ==
+
+= 1.1.1 - 2026-09-29 =
+* SECURITY: Improved sanitization and escaping throughout the plugin to resolve Plugin Check security findings. #3 (@dparker1005)
 
 = 1.1 - 2026-07-02 =
 * BUG FIX: Fixes an issue where it would cause the Member Profile page for the Member Directory and Profile Add On would be 404.

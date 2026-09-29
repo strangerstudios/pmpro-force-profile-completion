@@ -3,7 +3,7 @@
  * Plugin Name: Paid Memberships Pro - Force Profile Completion
  * Plugin URI: https://www.paidmembershipspro.com/add-ons/force-profile-completion
  * Description: Require all members to complete required profile fields before accessing restricted content.
- * Version: 1.1
+ * Version: 1.1.1
  * Author: Paid Memberships Pro
  * Author URI: https://www.paidmembershipspro.com
  * Text Domain: pmpro-force-profile-completion
@@ -16,7 +16,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
 
-define( 'PMPROFPC_VERSION', '1.1' );
+define( 'PMPROFPC_VERSION', '1.1.1' );
 
 /**
  * Check to see if the member is trying to view a restricted page. Ignore open/public pages.
